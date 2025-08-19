@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+Definitions of global colours as CSS variables.
+*/
+
+:root {
+	--antique_white: #FEE8D3;
+	--azul: #0071CE;
+	--azure: #E0F2F2;
+	--black: #000;
+	--celestial_blue: #009FDB;
+	--columbia_blue: #BDE3F6;
+	--dark_cyan: #008F95;
+	--dark_mantis: #74C054;
+	--dark_onyx: #333740;
+	--eerie_black: #252727;
+	--fire_brick: #B3282C;
+	--french_gray: #D3D5DC;
+	--folly: #F04E57;
+	--honey_dew: #EDF6E8;
+	--lavender: #D3CDE5;
+	--light_cyan: #D6EEEE;
+	--light_orange: #FFE1C6;
+	--mantis: #7CC35C;
+	--mimi_pink: #FDDCE2;
+	--nyanza: #DAEED1;
+	--onyx: #343741;
+	--orange_crayola: #F3743A;
+	--pale_dogwood: #FED7C7;
+	--rebecca_purple: #5A3E99;
+	--red_munsell: #EE1844;	
+	--robin_egg_blue: #3BC0C5;
+	--ruddy_blue: #69A9FF;
+	--tea_rose_red: #FDCCCF;
+	--tiffany_blue: #8DCFCF;
+	--verdigris: #00BAC0;
+	--white: #FFF;
+	
+}
+
+
+
+
+
+
+
+
+
+
+/*The following colours are not going to be used*/
+/*:root {*/
+/* Some generic colours */
+  --dark_fg: #af272f;
+  --med_fg: #365673;/* not used? */
+  --med_alt_fg: #5b89a6;/* not used? */
+  --med_bg: #7aacbf;/* not used? */
+  --light_bg: #e5e6e6;
+  --light_alt_bg: #f3dfe0;/* light pink */
+	--light_alt2_bg: #c4e0de;/* light green */
+	--light_alt3_bg: #9cd5ea;/* not used? */
+/* activity descriptions/instructions */
+  --act_desc_bg: #ffffed;
+	--act_desc_border: #af272f;
+/* generic activity components */
+	--act_bg: #e5e6e6;
+	--act_border: #af272f;
+	--act_feedback_bg: #7fd8d4;
+	--button_bg: #7aacbf;
+	--button_text: #111111;
+/* multiple choice */
+	--mc_option_bg: #e5e6e6;
+	/*--mc_option_selected_bg: #a9aaac;*/
+	--mc_option_selected_bg: #fff;
+	--mc_option_selected_border: #af272f;
+/* already in main.css */
+	--main-color: #00B2A9;
+	--sub-color: #00BAC0;
+	--sub-color2: #c4e0de;
+	--table-cell-color: #c4e0de;
+	--list-color: #B2EAEC;
+/*}*/
+

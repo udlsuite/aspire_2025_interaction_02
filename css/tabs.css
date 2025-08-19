@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+toggable tabs from https://www.w3schools.com/howto/howto_js_tabs.asp 
+edited to work as keyboard accessible a links instead of buttons (PD)
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, "sans-serif";
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/darkened_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tabs_container {
+  max-width: 1520px;
+  height: 1050px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.img_center {
+  display: flex;
+  justify-content: center;
+}
+
+.tabset {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5em 0;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5px; */
+  overflow: hidden;
+  max-width: 700px;
+  width: 700px;
+}
+
+.tabset_heading+.tabset {
+  margin-top: 0;
+}
+
+.tabset figure {
+  max-width: 100%;
+}
+
+.tabset-nav {
+  display: flex;
+  /* border-bottom: 1px solid #ccc; */
+  /* overflow-x: auto; */
+}
+
+.tabset-nav-item {
+  flex-grow: 1;
+  border: none;
+  background-color: #2e977e;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-weight: bold;
+  min-width: 150px;
+  text-align: left;
+  padding-left: 25px;
+  width: 33%;
+}
+
+@media only screen and (max-width: 540px) {
+  .tabset-nav-item {
+    min-width: auto;
+  }
+}
+
+.tabset-nav-item.active {
+  background-color: #fff;
+  color: #fff;
+  background-color: #00594f;
+}
+
+.tabset-nav-item:hover,
+.tabset-nav-item:focus {
+  background-color: #00594f;
+  color: #fff;
+}
+
+.tabset-panels {
+  padding: 10px;
+  min-height: 250px;
+  height: 265px;
+  /* overflow-y: scroll; */
+  background-color: #00594f;
+  color: #fff;
+  padding: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+.tabset-panel {
+  display: none;
+}
+
+.tabset-panel.active {
+  display: block;
+}
+
+.tabset-panel p {
+  margin-top: 1rem;
+}
+
+.tabset-panel p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.tabset_heading {
+  border-bottom: 4px solid var(--black);
+  font-size: 1.9em;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  max-width: 700px;
+  color: #fff;
+  background-color: #2e977e;
+  padding: 0.7em;
+}
+
+.tabset_heading:nth-of-type(-n + 2) {
+  margin-top: 0px;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s;
+}
+
+.tabset_pair {
+  height: 400px;
+}
+
+.tabset-nav .tabset-nav-item:nth-child(2) {
+  border-left: 2px solid #00594f;
+  /* example border */
+  border-right: 2px solid #00594f;
+}
+
+.nav_btns {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  padding-top: 5px;
+  background-color: transparent;
+  color: #444;
+  /* padding: 18px; */
+  width: 70px;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.arrow_path {
+  fill: #fff;
+}
+
+.cls-1,
+.arrow_path {
+  stroke-width: 0px;
+}
+
+#navigation circle {
+  fill: #000;
+  opacity: .51;
+}
+
+button#fwrd_btn {
+  position: relative;
+  align-self: flex-end;
+}
+
+
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
