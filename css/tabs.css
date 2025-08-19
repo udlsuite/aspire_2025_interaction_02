@@ -12,12 +12,15 @@ edited to work as keyboard accessible a links instead of buttons (PD)
 }
 
 body {
+  /* margin: 0;
+  padding: 0; */
   width: 100%;
   display: flex;
   justify-content: center;
   background-image: url("../img/darkened_background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  flex-direction: column;
 }
 
 #tabs_container {
@@ -28,6 +31,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin: auto;
 }
 
 .img_center {
@@ -151,44 +155,42 @@ body {
 }
 
 .nav_btns {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* width: 100%; */
+    margin-left: 2em;
+    margin-top:0.5em;
+    margin-right: 2em;
 }
 
 button {
-  padding-top: 5px;
-  background-color: transparent;
-  color: #444;
-  /* padding: 18px; */
-  width: 70px;
-  border: none;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 2px;
+    padding-top: 5px;
+    background-color: transparent;
+    color: #444;
+    /* padding: 18px; */
+    width: 70px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 2px;
 }
 
 .arrow_path {
-  fill: #fff;
+    fill: #fff;
 }
 
 .cls-1,
 .arrow_path {
-  stroke-width: 0px;
+    stroke-width: 0px;
 }
 
 #navigation circle {
-  fill: #000;
-  opacity: .51;
-}
-
-button#fwrd_btn {
-  position: relative;
-  align-self: flex-end;
+    fill: #000;
+    opacity: .51;
 }
 
 
